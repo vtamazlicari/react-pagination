@@ -1,0 +1,30 @@
+.row {
+  background-color: #3E3E3E;
+  display: flex;
+  height: 54px;
+
+  .col {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    gap: 10px;
+
+    p {
+      color: #fff;
+      font-size: 12px;
+      font-weight: 400;
+    }
+
+    .icon {
+      width: 26px;
+      height: 26px;
+      background-color: #555555;
+      border-radius: 50%;
+    }
+  }
+
+  &.header {
+    background-color: #B5E60014;
+  }
+}

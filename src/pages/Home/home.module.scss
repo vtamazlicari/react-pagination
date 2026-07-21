@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #2e2e2e;
+
+  .content {
+    flex: 1;
+    padding: $spacing-md;
+    display: flex;
+    gap: 10px;
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      overflow: auto;
+      background-color: $color-bg-dark;
+      padding: 10px;
+      gap: 10px;
+
+      .scrollableContainer {
+        flex: 1;
+        overflow-y: auto;
+      }
+
+      .status,
+      .statusError {
+        padding: $spacing-md;
+        font-size: 14px;
+        color: $color-text;
+      }
+
+      .statusError {
+        color: #ff8a8a;
+      }
+    }
+  }
+
+  .filters {
+    background-color: $color-bg-dark;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 330px;
+
+    .header {
+      font-size: 12px;
+      font-weight: 600;
+      color: $color-text;
+      background-color: #b5e60014;
+      height: 54px;
+      padding: 0 $spacing-md;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
